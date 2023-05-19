@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="CakeNeka" />
+  <meta name="description" content="Heraldos del entretemiento" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/styleForm.css">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="equipo.html">Equipo</a></li>
+      <li class="actual"><a href="contact.html">Contacto</a></li>
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="index.html"><img src="./img/helmet.png" alt="logo" id="navImg"></a></li>
+      <li><a href="catalogo.html">Tienda</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="contenedor">
+      
+      <img src="./img/divider.svg" alt="Divisor" class="divider">
+      <h1>Contacta Con Nosotros</h1>
+
+      <form action="">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <label for="name">Nombre Completo *</label> <br>
+          <input type="text" id="name" name="nombre" required /> <br>
+          <label for="direccion">Dirección</label> <br>
+          <input type="text" id="direccion" name="direccion" /> <br>
+          <label for="CP">Código Postal</label> <br>
+          <input type="text" id="CP" name="CP" /> <br>
+          <label for="correo">Correo Electrónico *</label> <br>
+          <input type="text" id="correo" name="correo" required/> <br>
+          <label for="telefono">Número de teléfono</label> <br>
+          <input type="text" id="telefono" name="telefono" /> <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>¿Por qué quiere contactar con nosotros?</legend>
+          <input type="checkbox" id="talento1" name="talento1" value="web">
+          <label for="talento1"> Quiero aportar un comentario </label><br>
+          <input type="checkbox" id="talento2" name="talento2" value="java">
+          <label for="talento2"> Me gustaría mejorar la página web </label><br>
+          <input type="checkbox" id="talento3" name="talento3" value="arte">
+          <label for="talento3"> Quiero poner una reclamación </label><br>
+          <input type="checkbox" id="talento4" name="talento4" value="paciencia">
+          <label for="talento4"> Quiero dar un agradecimiento </label><br>
+          <input type="checkbox" id="talento5" name="talento5" value="paciencia">
+          <label for="talento5"> Busco ofertas de empleo </label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Introduzca su mensaje</legend>
+          <label for="comentario">Introduzca el comentario a continuación *</label> <br>
+          <textarea name="comentario" id="comentario" rows="10" cols="60" required> </textarea> <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cuál es su juego favorito</legend>
+          <input type="radio" id="age" name="best_game" value="Age" />
+          <label for="age">Aetate Imperiorum II</label> <br>
+          <input type="radio" id="Caelestia" name="best_game" value="Sacred" />
+          <label for="Caelestia">Caelestia</label> <br>
+          <input type="radio" id="TenebrisAnimarum" name="best_game" value="pro" />
+          <label for="TenebrisAnimarum">Tenebris Animarum</label> <br>
+          <input type="radio" id="otro" name="best_game" value="Overwatch" />
+          <label for="otro">Otro</label>
+        </fieldset>
+        <hr>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerColumna">
+      <h3>Conocenos en</h3>
+      <a href="https://www.reddit.com/" target="_blank"> <img src="./img/reddit.png" alt="Logo de reddit"></a>
+      <a href="https://github.com/CakeNeka/Cakeneka.github.io" target="_blank"> <img src="./img/github.png" alt="Logo de github"></a>
+      <a href="https://www.youtube.com/" target="_blank"> <img src="./img/yotube.png" alt="Logo de youtube"></a>
+      <a href="https://twitter.com/" target="_blank"> <img src="./img/Twitter.png" alt="logo de twitter"></a>
+    </div>
+    <div class="footerColumna">
+      <h3>Ayuda</h3>
+      <p><a href="">Política de privacidad </a> </p>
+      <p> <a href="">Aviso Legal</a> </p>
+      <p> <a href="">Sobre Nosotros</a> </p>
+    </div>
+    <div class="footerColumna">
+      <h3>Empleo</h3>
+      <p> <a href="">Oportunidades</a> </p>
+      <p><a href="">Puestos abiertos</a></p>
+      <p><a href="">Qué buscamos</a></p>
+    </div>
+    <div class="footerColumna">
+      <h3>Contacto</h3>
+      <p><a href="mailto:lxAeterna@bromail.com">lxAeterna@bromail.com</a></p>
+      <P>973 773 756 346</P>
+      <p>C/ Trajano, Alcantarilla, España</p>
+    </div>
+  </footer>
+</body>
+
+</html>

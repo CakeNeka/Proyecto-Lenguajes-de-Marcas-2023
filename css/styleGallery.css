@@ -1,0 +1,51 @@
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 90px;
+  grid-auto-flow: dense;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-item img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.ancho {
+  grid-column: span 2;
+}
+
+.alto {
+  grid-row: span 2;
+}

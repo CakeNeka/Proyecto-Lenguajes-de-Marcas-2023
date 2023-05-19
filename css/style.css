@@ -1,0 +1,423 @@
+/* Uso de la API de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Quicksand&display=swap");
+
+/* Reglas globales (para eliminar los márgenes que vienen por defecto)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(248, 248, 242);
+  background-image: url(../img/alfombra.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Estilos de la barra de navegación */
+
+nav {
+  width: 100%;
+  background: rgb(40, 42, 54);
+  background: linear-gradient(
+    78deg,
+    rgba(40, 42, 54, 1) 5%,
+    rgba(194, 152, 254, 1) 95%
+  );
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  margin: auto;
+  width: fit-content;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  height: 60px;
+  width: 130px;
+}
+
+nav li:hover {
+  border-bottom: 3px solid rgb(255 121 198);
+}
+
+nav li.actual {
+  border-bottom: 3px solid rgb(139 233 253);
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(241, 250, 140);
+  font-weight: bold;
+  padding: 25px;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+#navImg {
+  width: 40px;
+}
+
+/* Capa de Presentación (inicio) */
+#landing {
+  width: 100%;
+  height: calc(
+    100vh - 60px
+  ); /* vh (viewport height) es el porcentaje de la altura actual del navegador */
+  overflow: hidden; /* Le resto el tamaño de la barra de navegación*/
+  padding: 15px;
+
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: rgb(255, 121, 198) 3px solid;
+
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+}
+
+#landingTitle {
+  height: 100%;
+  color: rgb(255 184 108);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#landingTitle img {
+  width: 7%;
+}
+
+/* Capa contenedora y columnas derecha, central e izquierda */
+/* Para la maquetación del cuerpo de la página */
+#contenedor {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgb(40, 42, 54);
+  padding: 30px 60px;
+  overflow: hidden;
+}
+
+.contenedorColumnas {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.columnaIzquierda {
+  float: left;
+  width: 45%;
+}
+
+.columnaDerecha {
+  float: right;
+  width: 45%;
+}
+
+section {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.presentacion {
+  width: 90%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(75, 77, 61, 0.61);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  transition: transform 100ms ease-out;
+}
+
+.presentacion:hover {
+  transform: scale(1.01);
+}
+
+.contenedorHorizontal {
+  display: table;
+  width: 100%;
+  overflow: auto;
+  margin-top: 25px;
+}
+
+.celda {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.celda img {
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+
+/* Clases para imágenes */
+
+.profile {
+  float: left;
+  height: 130px;
+  border-radius: 50%;
+  transition: border-radius 200ms ease-in-out;
+  margin-right: 40px;
+}
+
+.profile:hover {
+  border-radius: 12%;
+}
+
+.divider {
+  display: block;
+  margin: 0 auto 40px auto;
+  width: 60%;
+}
+/* Reglas de estilo de los títulos */
+
+.alineacionDerecha {
+  text-align: right;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(255 184 108);
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1.7em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: rgb(255, 121, 198);
+}
+
+h3 {
+  font-family: "Cinzel", serif;
+  font-weight: normal;
+  color: rgb(241, 250, 140);
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 7px;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  width: 50%;
+  background-color: rgb(255 184 108);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Reglas de estilo para la página 'Historia' */
+
+.navHistoria {
+  width: 80%;
+  border-radius: 10px;
+  margin: 50px auto;
+  background: linear-gradient(
+    -90deg,
+    rgba(40, 42, 54, 1) 5%,
+    rgba(194, 152, 254, 1) 95%
+  );
+  display: flex;
+  justify-content: space-around;
+}
+
+.navHistoria a {
+  transition: all ease-in 100ms;
+  border-radius: 4px;
+  font-size: 1.25em;
+  text-decoration: none;
+  display: inline-block;
+  background-color: antiquewhite;
+  padding: 15px 30px;
+  color: rgb(255, 121, 198);
+  background-color: rgb(0, 0, 0);
+}
+
+.navHistoria a:hover {
+  transition: all ease-in 100ms;
+  color: rgb(255 184 108);
+  transform: scale(1.05);
+}
+
+.historiaImg {
+  transition: transform 100ms ease-out;
+}
+
+.historiaImg:hover {
+  transform: translateY(-8px);
+}
+
+/* Reglas de estilo para la página 'Nosotros' (Ubicación) */
+.mapa {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.mapa iframe {
+  width: 90%;
+  height: 570px;
+
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  box-shadow: rgba(206, 206, 206, 0.35) 0px 5px 10px 0;
+  transition: all ease-in-out 300ms;
+}
+
+.mapa iframe:hover {
+  width: 100%;
+}
+
+.infoMapa {
+  width: 100%;
+  text-align: center;
+  transition: transform ease-in-out 100ms;
+}
+
+/* Reglas de estilo para la página catálogo (Tienda) */
+
+
+.grid-catalogo {
+  display: grid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(3, 1fr); 
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 100px;
+  place-items: center; 
+}
+
+
+.grid-catalogo .tarjeta { 
+  width: 300px;
+  height: 500px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgb(68 71 90);
+  text-align: center;
+  padding: 30px 20px;
+  transition: all ease-out 200ms;
+}
+
+.grid-catalogo .tarjeta:hover {
+  box-shadow: 0 20px 0px 0px rgb(255, 121, 198);
+  border: 1px solid rgb(255, 121, 198);
+  color: rgb(255, 121, 198);
+  transform: translateY(-20px);
+}
+
+.grid-catalogo .tarjeta img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 9px;
+}
+
+.grid-catalogo .tarjeta p {
+  line-height: 1.5;
+}
+
+.grid-catalogo .tarjeta .btn {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(139, 233, 253);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 25px;
+  transition: all ease-out 200ms;
+}
+
+
+
+.grid-catalogo .tarjeta .btn:hover {
+  letter-spacing: 1px;
+}
+
+
+
+
+/* Clase para lista desordenada con imagen (punto) personalizada */
+ul.puntos {
+  margin-bottom: 15px;
+}
+
+ul.puntos li {
+  list-style-image: url("../img/punto.png");
+  margin-left: 20px;
+}
+
+/* Estilo del footer y columnas del footer */
+footer {
+  border-top: 3px solid rgb(241, 250, 140);
+  background-color: rgba(68, 71, 90, 0.897);
+  width: 100%;
+  padding: 30px 60px;
+  overflow: hidden;
+}
+
+.footerColumna {
+  text-align: center;
+  width: 25%;
+  float: left;
+}
+
+footer img {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  transition: transform 200ms ease-out;
+}
+
+footer img:hover {
+  border-radius: 20%;
+  transform: translate(0, -10px);
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(241, 250, 140);
+  font-weight: 150;
+}
+
+footer a:hover {
+  text-decoration: underline solid 3px;
+}
