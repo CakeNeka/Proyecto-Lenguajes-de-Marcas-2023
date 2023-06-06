@@ -1,5 +1,5 @@
 # Proyecto HTML & CSS (2º Trimestre)
-## [:link: LVX AETERNA Studios](https://cakeneka.github.io)
+## [:link: LVX AETERNA Studios](https://cakeneka.github.io/Proyecto-Lenguajes-de-Marcas-2023/index.html)
 
 ### Importante ⚠
 
